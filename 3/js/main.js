@@ -95,6 +95,11 @@ const generatePhoto = () => ({
   comments: Array.from({ length: getRandomPositiveInteger(0, 3)}, generateComment),
 });
 
-const numberOfPhotos = Array.from({ length: NUMBER_OF_PHOTOS}, generatePhoto); // не понял толкьо куда в итоге нужно записать эту константу. Если консоль лог мы удаляем и терминал начаниате ругаться на то, что эта переменная нигде не используется.
+const numberOfPhotos = Array.from({ length: NUMBER_OF_PHOTOS}, generatePhoto);
 
-// console.log(numberOfPhotos); // удалить
+function showArryPhots() {
+  return(numberOfPhotos);
+}
+showArryPhots();
+
+
