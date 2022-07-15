@@ -97,17 +97,6 @@ const generatePhoto = () => ({
   comments: Array.from({ length: getRandomPositiveInteger(minInt, maxComments)}, generateComment),
 });
 
-const numberOfPhotos = Array.from({ length: NUMBER_OF_PHOTOS}, generatePhoto);
+const generatePhotos = () => Array.from({ length: NUMBER_OF_PHOTOS}, generatePhoto);
 
-// function showPhots() {
-//   return(numberOfPhotos);
-// }
-
-function showPhots() {
-  for (let i = 0; i < numberOfPhotos.length; i++) {
-    return(numberOfPhotos[i]);
-  }
-}
-
-showPhots(numberOfPhotos);
-export { showPhots };
+export { generatePhotos };
